@@ -167,8 +167,7 @@ def main(subject, \
   # // TODO: CHALLENGE 3
   # // Log in into Outlook email account
   # // Please use environment variable for security purposes
-  s = authenticate_account(EMAIL=os.environ['EMAIL_ADDRESS'], \
-    PASSWORD=os.environ['EMAIL_PASSWORD'])
+  s = authenticate_account(EMAIL=os.environ['EMAIL_ADDRESS'], PASSWORD=os.environ['EMAIL_PASSWORD'])
 
   # Iterate through all extracted contacts
   for name, email in zip(names, emails):
